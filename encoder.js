@@ -1,4 +1,5 @@
+var userInput = $("#input").val();
 
 $('#inputArea').keydown(function(e){
-   $('#textArea').append("<b>Appended text</b>");
+   $('#textArea').append(userInput);
 });
