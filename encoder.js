@@ -27,7 +27,7 @@ var letters = {
   89:"y",
   90:"z",
 }
-
+//the lettrs Above^^^^^
 $('#inputArea').keydown(function(e){
 
    if ($("input:checked").val() == "echo") {
@@ -41,6 +41,7 @@ $('#inputArea').keydown(function(e){
    }
 
 });
+//changing the text into casearcipher, echo, and heiroglyphics
 
 //Above this is echoing the input out to the text area
 
