@@ -1,4 +1,5 @@
 var letters = {
+  64: "z",
   65:"a",
   66:"b",
   67:"c",
@@ -28,8 +29,19 @@ var letters = {
 }
 
 $('#inputArea').keydown(function(e){
-   $('#textArea').append(letters[e.keyCode]);
+
+   if ($("input:checked").val() == "echo") {
+      $('#textArea').append(letters[e.keyCode]);
+   }
+   else if ($("input:checked").val() == "caesarcipher") {
+     $('#textArea').append(letters[e.keyCode -1]);
+   }
+   else if ($("input:checked").val() == "heiroglyphics") {
+     $('#textArea').append(letters[e.keyCode]);
+   }
+
 });
+
 //Above this is echoing the input out to the text area
 
 $("input[type='radio']").click(function(e) {
@@ -37,13 +49,3 @@ $("input[type='radio']").click(function(e) {
    $(this).prop('checked',true);
  });
 //Part 4: Changing which radio button is checked.
-
-if ($("input:checked").val() == "echo") {
-
-}
-else ($("input:checked").val() == "Caesar cipher") {
-
-}
-else ($("input:checked").val() == "Heiroglyphics") {
-
-}
