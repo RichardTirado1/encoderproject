@@ -1,5 +1,5 @@
 var letters = {
-  64: "z",
+  64:"z",
   65:"a",
   66:"b",
   67:"c",
@@ -37,11 +37,14 @@ $('#inputArea').keydown(function(e){
      $('#textArea').append(letters[e.keyCode -1]);
    }
    else if ($("input:checked").val() == "heiroglyphics") {
-     $('#textArea').append(letters[e.keyCode]);
+     $('#textArea').append("<img src = 'images/heiroglyphics/" + letters[e.keyCode] + ".gif'>");
+     //^^I added part 7 heiroglyphics^^^^^
    }
 
 });
 //changing the text into casearcipher, echo, and heiroglyphics
+
+
 
 //Above this is echoing the input out to the text area
 
