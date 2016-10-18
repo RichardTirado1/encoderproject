@@ -44,8 +44,6 @@ $('#inputArea').keydown(function(e){
 });
 //changing the text into casearcipher, echo, and heiroglyphics
 
-
-
 //Above this is echoing the input out to the text area
 
 $("input[type='radio']").click(function(e) {
