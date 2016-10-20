@@ -27,7 +27,7 @@ var letters = {
   89:"y",
   90:"z",
 }
-//the lettrs Above^^^^^
+//the lettrs Above the building blocks^^^^^
 $('#inputArea').keydown(function(e){
 
    if ($("input:checked").val() == "echo") {
@@ -50,4 +50,18 @@ $("input[type='radio']").click(function(e) {
    $("input:checked").prop('checked',false);
    $(this).prop('checked',true);
  });
-//Part 4: Changing which radio button is checked.
+//Part 4:^^^^^^^ Changing which radio button is checked^^^^^.
+
+///Part 8 below this code is decoding the casearcipher to the orignal text
+
+$("#translationInputText").keydown(function(e) {         
+    if(e.keyCode == 13) {
+      var inputTextBoxString = $("#translationInputText").val();
+      var messageArray = inputTextBoxString.split("");
+
+      for (var i = 0; i < messageArray.length; i++) {
+
+      }
+
+  }
+}
