@@ -54,13 +54,13 @@ $("input[type='radio']").click(function(e) {
 
 ///Part 8 below this code is decoding the casearcipher to the orignal text
 
-$("#translationInputText").keydown(function(e) {         
+$("#translationInputText").keydown(function(e) {
     if(e.keyCode == 13) {
       var inputTextBoxString = $("#translationInputText").val();
       var messageArray = inputTextBoxString.split("");
 
       for (var i = 0; i < messageArray.length; i++) {
-
+           messageArray[i]
       }
 
   }
