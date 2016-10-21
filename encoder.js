@@ -60,8 +60,8 @@ $("#translationInputText").keydown(function(e) {
       var messageArray = inputTextBoxString.split("");
 
       for (var i = 0; i < messageArray.length; i++) {
-           messageArray[i]
+          var translateNumber = messageArray[i].charCodeAt(0)- 32 + 1;
+          $('#translationArea').append(letters[translateNumber]);
       }
-
-  }
-}
+   }
+});
